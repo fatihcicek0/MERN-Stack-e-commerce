@@ -1,0 +1,23 @@
+.container-pdetail{
+    display: flex;
+    margin-top: 10px;
+}
+.container-pdetail > div{
+    padding:10px;
+}
+.container-pdetail img{
+    width: 290px;
+    max-height: 490px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+.pdetail-content div{
+    color: rgb(31, 151, 49);
+    font-weight: 700;
+}
+.pdetail-content button{
+   color:white;
+    border:none;
+    background-color: rgb(31, 151, 49); 
+    display: flex;
+}

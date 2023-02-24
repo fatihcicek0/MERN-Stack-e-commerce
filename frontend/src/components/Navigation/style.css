@@ -1,0 +1,187 @@
+.nav-categories {
+    margin-right: 10px;
+    min-width: 200px;
+}
+
+@media only screen and (max-width:1080px) {
+    .container-nav {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.nav-categories ul {
+    border: 1px solid lightgray;
+    margin: 0px;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+}
+
+.nav-categories li {
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+.nav-categories a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color:black;
+}
+
+.nav-categories a.active {
+    color: white;
+    background-color: rgb(34, 168, 54);
+}
+
+.prices {
+    position: fixed;
+    top: 200px;
+    padding-left: 5px;
+}
+
+.nav-prices {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width:1080px) {
+
+    .nav-categories ul {
+        display: flex;
+        width: 250px;
+        border: none;
+        justify-content: space-around;
+
+    }
+
+    .nav-categories li {
+        border: 1px solid lightgray;
+        border-radius: 10px;
+    }
+
+    .nav-categories a {
+        padding: 7px;
+    }
+
+    .nav-categories a.active {
+        border-radius: 5px;
+    }
+
+    .prices {
+        all: unset;
+        padding-left: 45px;
+        position:relative;
+    }
+    .prices h4{
+        padding-top:7px;
+        position: relative;
+    }
+    .prices h4:hover ~ .nav-prices{
+        display:block;
+        background-color: white;
+        position: absolute;
+        padding-left: 0;
+    }
+    .prices h4::after{
+        content:'';
+        border-width: 6px;
+        border-style:solid;
+        border-color:black transparent transparent transparent;
+        position:absolute;
+        top:16px;
+        right: -15px;
+    }
+    .nav-prices {
+        all:unset;
+        display: none;
+        background-color: white;
+        box-shadow: 0px 0px 10px 2px lightgray;
+        border-radius: 5px;
+        position:absolute;
+        right: -20px;
+        top:40px;
+    }.nav-prices:hover{
+        display: block;
+    }
+    .nav-prices ul{
+        padding: 10px 15px;
+        max-width: 100px;
+    }
+
+}
+
+.nav-prices a {
+    text-decoration: none;
+    color: gray;
+    position: relative;
+    font-size: 14px;
+}
+
+.nav-prices a::before {
+    content: '';
+    color: gray;
+    border: 1px solid;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    top: 6px;
+    left: -12px;
+}
+
+.nav-prices a.active {
+    position: relative;
+    color: green;
+}
+
+.nav-prices a.active::before {
+    content: '';
+    color: green;
+    background-color: green;
+    border-style: solid;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    top: 6px;
+    left: -12px;
+}
+
+/* ------------------------------------BURGER MENU----------------------- */
+
+.burger-menu {
+    margin-top: 8px;
+    display: none;
+}
+.line1,.line2,.line3{
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    margin-top:5px;
+}
+
+@media only screen and (max-width:850px){
+    .burger-menu{
+        display:block;
+    }
+    .close .line1{
+        transform: rotate(-45deg) translate(-5px, 3px);
+        transition: .3s;
+    }
+    .close .line2{
+        opacity: 0;
+    }
+    .close .line3{
+        transform: rotate(45deg) translate(-10px ,-9px);
+        transition:.3s ;
+    }
+}

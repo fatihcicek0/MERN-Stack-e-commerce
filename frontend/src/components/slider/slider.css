@@ -1,0 +1,20 @@
+.slider{
+    width: 100%;
+    max-height: 350px;
+    position:relative;
+    transition: .8s;
+}
+.slider img{
+    width: 100%;
+    max-height: 350px;
+    border-radius: 5px;
+   transition: .8s;
+}
+.back,.next{
+    position: absolute;
+    top: 160px;;
+    color:rgb(232, 230, 230);
+}
+.next{
+    right: 0px;
+}

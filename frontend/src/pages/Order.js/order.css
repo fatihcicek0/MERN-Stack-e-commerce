@@ -1,0 +1,33 @@
+.container-order .card{
+    border:1px lightgray solid;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.container-order .card-head,.total{
+    text-align: end;
+    color:rgb(96, 95, 95);
+    padding: 5px 15px;
+    background-color: rgb(241, 240, 240);
+}
+.container-order .card table{
+    border-collapse:collapse ;
+    width: 100%;
+}
+.container-order .card table th,td{
+    border-bottom:1px solid rgb(169, 169, 169);
+}
+.container-order table tr:last-child{
+    border-bottom: none;
+}
+.container-order .card img{
+    max-width: 90px;
+    max-height: 110px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.container-order .card-product{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}

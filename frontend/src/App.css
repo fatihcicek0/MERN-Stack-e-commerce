@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+
+}
+
+.App>div {
+  padding-top: 60px;
+}
+
+/* //------------------Header STYLE ---------------------------------------- */
+
+
+header {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  background-color: #007bff;
+  z-index: 1;
+}
+
+header div {
+  display: flex;
+}
+
+header>a {
+  text-decoration: none;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+header li a {
+  color: rgb(213, 212, 212);
+  text-decoration: none;
+  padding: 10px;
+}
+
+header li a.active {
+  color: white;
+}
+
+@media only screen and (max-width:850px) {
+  header .nav-left {
+    position: absolute;
+    background-color: #007bff;
+    right: 0px;
+    top: 50px;
+    display: none;
+    border-bottom-left-radius: 5px;
+  }
+
+  header .nav-left.open {
+    display: block;
+  }
+
+  header .nav-left ul {
+    flex-direction: column;
+  }
+
+  header .nav-left ul li {
+    padding: 15px 70px;
+  }
+
+  span.cart {
+    display: none;
+  }
+}
+
+/* //------------------Table STYLE ---------------------------------------- */
+
+.container-table table {
+  border-collapse: collapse;
+  background-color: rgb(249, 249, 249);
+}
+
+.container-table table,
+th,
+td {
+  padding: 3px 40px;
+  border-bottom: 1px solid rgb(216, 214, 214);
+}
+
+.container-table thead tr {
+  border-radius: 10px;
+}
+
+.container-table th {
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+
+.container-table img {
+  width: 90px;
+}
+
+.container-table .btn-delete {
+  padding: 0px;
+  color: gray;
+  border: rgb(112, 111, 111);
+}
